@@ -1,0 +1,5 @@
+.fake
+.ionide
+*.lock
+src/**/bin
+src/**/obj
