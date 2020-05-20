@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3D2BEAAE-6E68-4471-95C1-6FFC97892DDF}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Lispy", "src\Luspy\Lispy.fsproj", "{350459EC-049D-43F7-88C6-5EC45C373A74}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Lispy", "src\Lispy\Lispy.fsproj", "{350459EC-049D-43F7-88C6-5EC45C373A74}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Interpreter", "src\Interpreter\Interpreter.fsproj", "{180E5943-50AD-4501-A6C6-4FDCBC3A1FA0}"
 EndProject
