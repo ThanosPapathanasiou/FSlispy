@@ -1,6 +1,7 @@
-﻿open System
+﻿module FSlispy.Lispy
 
-open Interpreter
+open System
+open FSlispy.Interpreter
 
 [<EntryPoint>]
 let main argv =

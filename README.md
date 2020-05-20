@@ -9,10 +9,5 @@ To build the project you need to open a terminal in the base directory and run t
 In linux
 
 ``` bash
-./fake.sh build
-```
-or in windows 
-
-``` terminal
-fake.cmd build
+make build
 ```

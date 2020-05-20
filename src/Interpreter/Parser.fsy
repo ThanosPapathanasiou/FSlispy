@@ -1,0 +1,20 @@
+﻿%{
+
+
+%}
+
+%start start
+
+%token HELLO
+
+%token EOF
+
+%type < int > start
+
+%%
+
+start: File EOF { $1 }
+
+File:
+	| HELLO						{ 1 }
+	| HELLO HELLO				    { 2 }
