@@ -1,20 +1,27 @@
 ﻿%{
 
+let getOp (op:string) = 
+  match op with 
+  | "+" -> (+)
+  | _ -> failwith "oh noes!"
 
 %}
 
-%start start
+%token <int> Int
+%token <string> OP
 
-%token HELLO
+%token LPAREN 
+%token RPAREN
 
 %token EOF
 
-%type < int > start
-
+%start main
+%type <int> main
 %%
 
-start: File EOF { $1 }
+main:
+	expr EOF				{ $1 }
 
-File:
-	| HELLO						{ 1 }
-	| HELLO HELLO				    { 2 }
+expr: Int					{ $1 }
+	| LPAREN expr RPAREN	{ $2 }
+	| OP expr expr			{ (getOp $1) $2  $3 }
