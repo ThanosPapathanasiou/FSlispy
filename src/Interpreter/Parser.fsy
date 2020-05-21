@@ -2,12 +2,15 @@
 
 let getOp (op:string) = 
   match op with 
-  | "+" -> (+)
-  | _ -> failwith "oh noes!"
+  | "+" -> ( + )
+  | "-" -> ( - )
+  | "*" -> ( * )
+  | "/" -> ( / )
+  | _ -> failwith (sprintf "Couldn't recognize operator: '%s'" op)
 
 %}
 
-%token <int> Int
+%token <int> INT
 %token <string> OP
 
 %token LPAREN 
@@ -22,6 +25,6 @@ let getOp (op:string) =
 main:
 	expr EOF				{ $1 }
 
-expr: Int					{ $1 }
-	| LPAREN expr RPAREN	{ $2 }
+expr: INT					{ $1 }
 	| OP expr expr			{ (getOp $1) $2  $3 }
+	| LPAREN expr RPAREN	{ $2 }

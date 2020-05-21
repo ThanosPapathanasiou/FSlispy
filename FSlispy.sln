@@ -9,6 +9,10 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Lispy", "src\Lispy\Lispy.fs
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Interpreter", "src\Interpreter\Interpreter.fsproj", "{180E5943-50AD-4501-A6C6-4FDCBC3A1FA0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{BC0FF119-7E09-4D5C-8E37-27438C1DEBCA}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Interpreter.test", "test\Interpreter.test\Interpreter.test.fsproj", "{D814ACBA-48E4-4805-B699-424580CA9FC1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,9 +50,22 @@ Global
 		{180E5943-50AD-4501-A6C6-4FDCBC3A1FA0}.Release|x64.Build.0 = Release|Any CPU
 		{180E5943-50AD-4501-A6C6-4FDCBC3A1FA0}.Release|x86.ActiveCfg = Release|Any CPU
 		{180E5943-50AD-4501-A6C6-4FDCBC3A1FA0}.Release|x86.Build.0 = Release|Any CPU
+		{D814ACBA-48E4-4805-B699-424580CA9FC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D814ACBA-48E4-4805-B699-424580CA9FC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D814ACBA-48E4-4805-B699-424580CA9FC1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D814ACBA-48E4-4805-B699-424580CA9FC1}.Debug|x64.Build.0 = Debug|Any CPU
+		{D814ACBA-48E4-4805-B699-424580CA9FC1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D814ACBA-48E4-4805-B699-424580CA9FC1}.Debug|x86.Build.0 = Debug|Any CPU
+		{D814ACBA-48E4-4805-B699-424580CA9FC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D814ACBA-48E4-4805-B699-424580CA9FC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D814ACBA-48E4-4805-B699-424580CA9FC1}.Release|x64.ActiveCfg = Release|Any CPU
+		{D814ACBA-48E4-4805-B699-424580CA9FC1}.Release|x64.Build.0 = Release|Any CPU
+		{D814ACBA-48E4-4805-B699-424580CA9FC1}.Release|x86.ActiveCfg = Release|Any CPU
+		{D814ACBA-48E4-4805-B699-424580CA9FC1}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{350459EC-049D-43F7-88C6-5EC45C373A74} = {3D2BEAAE-6E68-4471-95C1-6FFC97892DDF}
 		{180E5943-50AD-4501-A6C6-4FDCBC3A1FA0} = {3D2BEAAE-6E68-4471-95C1-6FFC97892DDF}
+		{D814ACBA-48E4-4805-B699-424580CA9FC1} = {BC0FF119-7E09-4D5C-8E37-27438C1DEBCA}
 	EndGlobalSection
 EndGlobal
