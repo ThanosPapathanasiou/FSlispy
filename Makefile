@@ -1,4 +1,4 @@
-.DEFAULT_GOAL := run
+.DEFAULT_GOAL := all
 
 clean:
 	rm -f ./src/Interpreter/Parser.fs
@@ -13,10 +13,12 @@ build: clean
 
 test: build
 	dotnet build --verbosity quiet ./test/Interpreter.test/Interpreter.test.fsproj
+	
+testrun: 
 	dotnet test ./test/Interpreter.test/Interpreter.test.fsproj
 
 run: build
 	clear
 	dotnet run --project ./src/Lispy/Lispy.fsproj
 
-	
+all: build test testrun  	
