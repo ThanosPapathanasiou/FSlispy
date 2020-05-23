@@ -16,7 +16,7 @@
       <OtherFlags>--module FSlispy.Lexer --unicode</OtherFlags>
     </FsLex>
 
-    <Compile Include="Types.fs" />
+    <Compile Include="Runtime.fs" />
 
     <Compile Include="Parser.fsi" />
     <Compile Include="Parser.fs" />

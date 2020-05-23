@@ -23,6 +23,6 @@ rule tokenize = parse
 | '('               { LPAREN }
 | ')'               { RPAREN }
 | ['-']?digit+      { INT ( Int32.Parse (lexeme lexbuf) ) }
-| operator          { OP (lexeme lexbuf) }
+| operator          { SYMBOL (lexeme lexbuf) }
 | eof               { EOF }
 | _                 { lexeme lexbuf |> sprintf "Parsing error: %s" |> failwith }

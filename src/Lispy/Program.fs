@@ -5,12 +5,14 @@ open FSlispy.Interpreter
 
 [<EntryPoint>]
 let main argv =
-    printfn "Lispy version 0.0.1"
-    printfn "Press Ctrl+c to Exit"
+    printfn "Lispy version 0.0.5"
+    printfn "Press Ctrl+c or type 'exit' to Exit"
 
     while true do
-        printf "> "
+        printf "λ> "
         let input = Console.ReadLine()
-        let result = Interpreter.evaluate input
-        printfn "%s" result
+        match input with 
+        | "exit" -> Environment.Exit 0
+        | _ -> let result = Interpreter.evaluate input
+               printfn "%s" result
     0
